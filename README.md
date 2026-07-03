@@ -56,22 +56,24 @@ adsense-site-builder/
 
 ## Installation
 
-Install using Vercel's `skills` CLI:
-
-```bash
-npx skills add zisheng-ai/skills --skill adsense-site-builder
-```
-
-Or copy manually to your local skills directory:
+**Git submodule (recommended — stays up to date):**
 
 ```bash
 # Claude Code
-mkdir -p ~/.claude/skills
-cp -R skills/adsense-site-builder ~/.claude/skills/adsense-site-builder
+git submodule add https://github.com/zisheng-ai/adsense-site-builder .claude/skills/adsense-site-builder
 
 # Codex
-mkdir -p ~/.codex/skills
-cp -R skills/adsense-site-builder ~/.codex/skills/adsense-site-builder
+git submodule add https://github.com/zisheng-ai/adsense-site-builder .codex/skills/adsense-site-builder
+```
+
+**Clone standalone:**
+
+```bash
+# Claude Code
+git clone https://github.com/zisheng-ai/adsense-site-builder ~/.claude/skills/adsense-site-builder
+
+# Codex
+git clone https://github.com/zisheng-ai/adsense-site-builder ~/.codex/skills/adsense-site-builder
 ```
 
 After installation, tell the agent to use `adsense-site-builder` in a new session.
